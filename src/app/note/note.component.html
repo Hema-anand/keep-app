@@ -1,0 +1,34 @@
+<!-- <div class="note-card">
+    <h3>{{note.title}}</h3>
+    <p>{{note.content}}</p>
+</div> -->
+
+<mat-card  (mouseover)="over()" (mouseleave)="out()">
+    <mat-card-header>
+      <button mat-card-avatar *ngIf="note?.priority==='Low'" color="primary" mat-icon-button>
+        <mat-icon>arrow_circle_down</mat-icon>
+    </button>
+    <button mat-card-avatar  *ngIf="note?.priority==='Medium'" color="primary" mat-icon-button>
+        <mat-icon>remove_circle_outline</mat-icon>
+    </button>
+    <button mat-card-avatar  *ngIf="note?.priority==='High'" color="accent" mat-icon-button>
+        <mat-icon>arrow_circle_up</mat-icon>
+    </button>
+    <button mat-card-avatar  *ngIf="note?.priority==='Critical'" color="accent" mat-icon-button>
+        <mat-icon>gpp_maybe</mat-icon>
+    </button>
+      <mat-card-title>{{note?.title}}</mat-card-title>
+      <mat-card-subtitle>{{note?.reminderDate?.slice(0,10)}} 8:00 AM</mat-card-subtitle>
+     </mat-card-header>
+     <mat-card-content>
+      <p>{{note?.content}}</p>
+  </mat-card-content>
+    <mat-card-actions *ngIf="isHovered">
+      <mat-icon color="primary">comment</mat-icon>
+      <!-- <mat-icon routerLink = "{{note?.id}}"  color="primary">edit</mat-icon> -->
+      <!-- <mat-icon routerLink = "../notes/{{note?.id}}"  color="primary">edit</mat-icon> -->
+      <mat-icon routerLink = "./{{note?.id}}"  color="primary">edit</mat-icon>
+      <mat-icon (click)="deleteNote()" color="primary">delete</mat-icon>
+      <mat-icon color="warn">notification_important</mat-icon>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,14 @@
+<p>
+    <mat-toolbar id="header" color="primary">
+        <span>{{title}}</span>
+        <nav id="navigation-links">
+            <mat-icon routerLink="/">home</mat-icon>
+            <mat-icon matTooltip="login" routerLink="login" *ngIf="loggedIn!==true">login</mat-icon>
+            <mat-icon matTooltip="logout" (click)="logout()" *ngIf="loggedIn===true">logout</mat-icon>
+                      
+            <mat-icon>list</mat-icon>
+            <mat-icon>settings</mat-icon>
+            <mat-icon routerLink="/register-user">person_add</mat-icon>
+        </nav>
+    </mat-toolbar>
+</p>

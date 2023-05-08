@@ -1,0 +1,16 @@
+/* header {
+    padding: 1px 10px;
+    background-color: navy;
+    color:aliceblue;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    width:90vw;
+    }
+#navigation-links > mat-icon {
+    margin-right: 8px;
+    font-size: 1em;
+}

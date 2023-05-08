@@ -1,0 +1,8 @@
+<div class="container">
+    <app-note-add *ngIf="isPanelVisible" (addedNote)="onAddNote($event)"></app-note-add>
+    <app-search (searchedText)="onSearch($event)" class="search"></app-search>
+    <app-note *ngFor="let note of notes" (deletedNote)="onDeleteNote($event)" [note]=note></app-note>
+    <button mat-mini-fab color="primary" aria-label="Add icon" (click)="showPanel()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>

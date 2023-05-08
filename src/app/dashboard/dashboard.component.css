@@ -1,0 +1,46 @@
+.note-card {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 1px 1px lightblue;
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+}
+.container {
+    width: 90vw;
+    margin: auto;
+}
+.search-box {
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    width: 18%;
+    padding: 5px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.add-view {
+    width: 25%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid navy;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px aliceblue;
+}
+.note-field {
+    display: inline-flex;
+    margin: 3px;
+}
+
+.note-field  textarea{
+    height: 50px;
+}
+
+button {
+    margin: 3px;
+}

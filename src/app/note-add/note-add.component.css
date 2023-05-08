@@ -1,0 +1,31 @@
+/* .container {
+    width: 20%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid navy;
+    border-radius: 10px;
+} */
+
+#container{
+    margin:50px auto;
+    width:25%;
+}
+
+button {
+    margin: 3px;
+    color: white;
+    background-color: navy;
+}
+
+/* .note-field {
+    display: inline-flex;
+    margin: 3px;
+    border-style: none none groove none;
+}
+
+textarea {
+    height: 50px;
+    border-style: none none groove none;
+} */
+

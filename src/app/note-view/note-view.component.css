@@ -1,0 +1,17 @@
+.container {
+    width: 90vw;
+    margin: auto;
+}
+
+.search{
+    /* position:absolute;
+    top:30px;
+    right:40px; */
+    margin:auto;
+}
+
+button{
+    position:fixed;
+    bottom:20px; 
+    right:40px;
+}

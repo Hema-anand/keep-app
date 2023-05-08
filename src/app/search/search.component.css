@@ -1,0 +1,17 @@
+.search-box {
+    border-radius: 5px;
+    width: 25%; 
+    padding: 5px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.form-field{
+    width:100%;
+}
+/* button {
+    color: white;
+    background-color: navy;
+    border: 1px solid white;
+    padding: 2px 5px;
+} */
